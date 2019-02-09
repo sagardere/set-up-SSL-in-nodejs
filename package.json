@@ -1,0 +1,31 @@
+{
+  "name": "set-up-ssl-in-nodejs",
+  "version": "1.0.0",
+  "description": "Set-up SSL in NodeJS and Express using OpenSSL",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sagardere/set-up-SSL-in-nodejs.git"
+  },
+  "keywords": [
+    "ssl",
+    "openSSL",
+    "https",
+    "nodejs",
+    "expressjs"
+  ],
+  "author": "Dere Sagar",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sagardere/set-up-SSL-in-nodejs/issues"
+  },
+  "homepage": "https://github.com/sagardere/set-up-SSL-in-nodejs#readme",
+  "dependencies": {
+    "express": "^4.16.4",
+    "fs": "0.0.1-security",
+    "https": "^1.0.0"
+  }
+}
