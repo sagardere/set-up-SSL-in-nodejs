@@ -1,13 +1,15 @@
 const express = require('express');
+const http = require('http');
 const https = require('https');
 const fs = require('fs');
-const port = 3000;
+const httpPort = 3000;
+const httpsPort = 3001;
 app = express()
 
 var key = fs.readFileSync(__dirname + '/certsFiles/selfsigned.key');
 var cert = fs.readFileSync(__dirname + '/certsFiles/selfsigned.crt');
 
-var options = {
+var credentials = {
   key: key,
   cert: cert
 };
@@ -17,9 +19,14 @@ app.get('/', (req, res) => {
    res.send('Hello World.');
 });
 
-// we will pass our 'app' to 'https' server
-var server = https.createServer(options, app);
+var httpServer = http.createServer(app);
+var httpsServer = https.createServer(credentials, app);
 
-server.listen(port, () => {
-  console.log("Server listing on port : " + port)
+
+httpServer.listen(httpPort, () => {
+  console.log("Http server listing on port : " + httpPort)
+});
+
+httpsServer.listen(httpsPort, () => {
+  console.log("Https server listing on port : " + httpsPort)
 });
