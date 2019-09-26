@@ -12,7 +12,7 @@
 
 ```
 Country Name (2 letter code) [AU]: US
-@@ -23,15 +23,15 @@ Email Address []: Your email
+Email Address []: Your email
 
 Answer all questions. If all went well, you should see two new files in your certsFiles directory, i.e. selfsigned.key and selfsigned.crt.
 
