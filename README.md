@@ -8,6 +8,7 @@
 
 `sudo openssl req -x509 -nodes -days 365 -newkey rsa:2048 -keyout ./selfsigned.key -out selfsigned.crt
 `
+
 3. After you run the above command, enter the following information:
 
 ```
@@ -16,9 +17,11 @@ Email Address []: Your email
 etc
 
 ```
+
 Answer all questions. If all went well, you should see two new files in your certsFiles directory, i.e. selfsigned.key and selfsigned.crt.
 
 4. Now start server by running:
+
 npm start
 
 Open your favourite browser and visit https://localhost:3000 and you should see Hello World.
