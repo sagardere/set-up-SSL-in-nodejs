@@ -13,13 +13,14 @@
 ```
 Country Name (2 letter code) [AU]: US
 Email Address []: Your email
+etc
 
+```
 Answer all questions. If all went well, you should see two new files in your certsFiles directory, i.e. selfsigned.key and selfsigned.crt.
 
 4. Now start server by running:
-```
 npm start
-```
+
 Open your favourite browser and visit https://localhost:3000 and you should see Hello World.
 
 You may see some SSL warning. That’s because your certificate isn’t issued by any verified organization. What you want to do is, add the crt as an exception to your browser.
